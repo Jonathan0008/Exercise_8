@@ -1,4 +1,6 @@
-import Logo from "./Logo";
+import Logo from "../../Header/Logo";
+import Evolution from "./Evolution";
+import Type_Effect from "./Type_Effect";
 
 const Header = () => {
     return (
