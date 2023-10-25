@@ -5,13 +5,15 @@
 import Header from './Component/Header'
 import Home from './Component/Home'
 import Footer from './Component/Footer'
+import Logo from './Component/Header/Logo';
 
 const App = () => {
   return (
     <>
-      <Header />
-      <Home />
+      <Header title= "Header"/>
+      <Home title= "Home"/>
       <Footer title = "Footer"/>
+      <Logo title= "Logo"/>
     </>
   );
 };
