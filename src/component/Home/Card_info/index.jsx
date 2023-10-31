@@ -1,15 +1,6 @@
-import Logo from "../../Header/Logo";
-import Evolution from "./Evolution";
-import Type_Effect from "./Type_Effect";
+/* eslint-disable react/prop-types */
+const Card_info = ({title}) => {
+  return <p>{title}</p>;
+};
 
-const Header = () => {
-    return (
-    <>
-      <Type_Effect />
-      <Evolution />
-      <Logo/>
-    </>
-  );
-  };
-  
-  export default Header;
+export default Card_info;
