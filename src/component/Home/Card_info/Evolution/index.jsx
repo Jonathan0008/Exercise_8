@@ -1,5 +1,6 @@
-const Evolution = () => {
-    return <h1> Evolution</h1>;
-  };
-  
-  export default Evolution;
+/* eslint-disable react/prop-types */
+const Evolution = ({title}) => {
+  return <p>{title}</p>;
+};
+
+export default Evolution;
