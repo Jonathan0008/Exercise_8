@@ -1,35 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
+// import './App.css'
+import Header from './Component/Header'
+import Home from './Component/Home'
+import Footer from './Component/Footer'
+import Logo from './component/Header/Logo';
+import Generations from './component/Header/Generations';
+import Card_info from './component/Home/Card_info';
+import Search from './component/Home/Search';
+import Evolution from './component/Home/Card_info/Evolution';
+import Gen1 from './component/Header/Generations/Gen1';
+import Gen2 from './component/Header/Generations/Gen2';
+import Gen3 from './component/Header/Generations/Gen3';
+import Gen4 from './component/Header/Generations/Gen4';
+import Type_Effect from './component/Home/Card_info/Type_Effect';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Header title= "Header"/>
+      <Home title= "Home"/>
+      <Footer title = "Footer"/>
+      <Logo title= "Logo"/>
+      <Generations title = "Generations"/>
+      <Gen1 title = "Gen1" />
+      <Gen2 title = "Gen2" />
+      <Gen3 title = "Gen3" />
+      <Gen4 title = "Gen4" />
+      <Search title = "Search" />
+      <Card_info title = "Card Info" />
+      <Evolution title = "Evolutions"/>
+      <Type_Effect title = "Type_Effect"/>
+
     </>
-  )
-}
+  );
+};
 
 export default App
