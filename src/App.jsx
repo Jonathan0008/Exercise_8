@@ -9,6 +9,12 @@ import Logo from './component/Header/Logo';
 import Generations from './component/Header/Generations';
 import Card_info from './component/Home/Card_info';
 import Search from './component/Home/Search';
+import Evolution from './component/Home/Card_info/Evolution';
+import Gen1 from './component/Header/Generations/Gen1';
+import Gen2 from './component/Header/Generations/Gen2';
+import Gen3 from './component/Header/Generations/Gen3';
+import Gen4 from './component/Header/Generations/Gen4';
+import Type_Effect from './component/Home/Card_info/Type_Effect';
 
 const App = () => {
   return (
@@ -24,6 +30,9 @@ const App = () => {
       <Gen4 title = "Gen4" />
       <Search title = "Search" />
       <Card_info title = "Card Info" />
+      <Evolution title = "Evolutions"/>
+      <Type_Effect title = "Type_Effect"/>
+
     </>
   );
 };
